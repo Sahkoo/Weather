@@ -34,6 +34,7 @@ button.addEventListener("click", function () {
         let p = document.createElement('p')
         let p2 = document.createElement('p')
         p.className = 'p_comment'
+        p2.className = 'p-comment'
         p.textContent = getText
         p2.textContent = getText2
         comment.appendChild(p2)
@@ -45,34 +46,50 @@ button.addEventListener("click", function () {
     }, 2000)
 })
 
+
+
+
+
+
 let newComment = [
     "круто показує погоду!",
     "баняк",
     "глек",
     "добавте ще щось на сайт",
-    "андрій каструля"
-];
+    "андрій каструля",
+    "холодно наразі",
+    "ярик лох"
+]
 
 let commentNames = [
     "akerman1337",
     "katssuu",
     "Lord Zelensky",
     "spr1n1k",
-    "Sanchez123"
-];
+    "Sanchez123",
+    "Yaroslav Bakugan",
+    "Burym Moshennik"
+]
 
-function pokazatiKomentari() {
-    let misceKomentariv = document.createElement('div');
+function showСomments() {
+    let commentSpace = document.createElement('div')
+    commentSpace.classList.add('comment-container');
 
     for (let i = 0; i < newComment.length; i++) {
         setTimeout(function () {
-            let randomName = commentNames[Math.floor(Math.random() * commentNames.length)];
-            let komentar = document.createElement('p');
-            newComment[i];
-            misceKomentariv.appendChild(komentar);
-        }, i * 20000);
+            let randomName = commentNames[Math.floor(Math.random() * commentNames.length)]
+            let komentar = document.createElement('p')
+            let komentarr = document.createElement('p')
+            komentar.textContent = randomName
+            komentarr.textContent = newComment[i]
+            komentar.classList.add('comment-item')
+            komentarr.classList.add('comment_item')
+            commentSpace.appendChild(komentar)
+            commentSpace.appendChild(komentarr)
+        }, i * 20000)
     }
-    let commentsBlock = document.querySelector('.second_part');
-    commentsBlock.appendChild(misceKomentariv);
+    let commentsBlock = document.querySelector('.second_part')
+    commentsBlock.appendChild(commentSpace)
 }
-pokazatiKomentari()
+
+showСomments()

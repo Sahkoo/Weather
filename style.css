@@ -113,6 +113,7 @@ body {
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
+        backdrop-filter: blur(2px);
     }
 
     .app-container {
@@ -263,7 +264,7 @@ body {
         font-variation-settings:
             "wdth" 100;
         background: #fff;
-        border-radius: 20px;
+        /* border-radius: 20px; */
     }
 
     .comment p {
@@ -272,7 +273,21 @@ body {
     }
 
     .p_comment {
-        font-size: 12px;
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    .p-comment{
+        margin-left: 10px;
+    }
+
+    .comment-item{
+        margin-left: 10px;
+    }
+
+    .comment_item{
+        font-size: 20px;
+        margin-left: 20px;
     }
 
     .comment_h2 {
