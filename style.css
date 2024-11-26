@@ -275,20 +275,35 @@ body {
     .p_comment {
         font-size: 20px;
         margin-left: 20px;
+        color: #ffe600;
     }
 
     .p-comment{
         margin-left: 10px;
+        color: #009dff;
     }
+
+
+
+
 
     .comment-item{
         margin-left: 10px;
+        color: #009dff;
     }
 
     .comment_item{
         font-size: 20px;
         margin-left: 20px;
+        color: #ffe600;
     }
+
+
+
+
+
+
+
 
     .comment_h2 {
         margin: 0 auto;

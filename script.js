@@ -58,7 +58,15 @@ let newComment = [
     "добавте ще щось на сайт",
     "андрій каструля",
     "холодно наразі",
-    "ярик лох"
+    "ярик лох",
+    "завтра гарна погода",
+    "думаю сьогодні погуляти",
+    "в понеділок -5°C",
+    "раніше було краще",
+    "мій улюблений сайт про погоду",
+    "в насті гірше",
+    "цілий тиждень дощі(",
+    "гірше уже не буде"
 ]
 
 let commentNames = [
@@ -68,7 +76,10 @@ let commentNames = [
     "spr1n1k",
     "Sanchez123",
     "Yaroslav Bakugan",
-    "Burym Moshennik"
+    "Burym Moshennik",
+    "Бабка Гренні",
+    "Дідусь Кібер",
+    "Ліхач на Черепасі"
 ]
 
 function showСomments() {
@@ -89,7 +100,7 @@ function showСomments() {
         }, i * 20000)
     }
     let commentsBlock = document.querySelector('.second_part')
-    commentsBlock.appendChild(commentSpace)
+    comment.appendChild(commentSpace)
 }
 
 showСomments()
