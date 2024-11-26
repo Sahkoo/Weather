@@ -44,3 +44,35 @@ button.addEventListener("click", function () {
         loader.style.display = 'none'
     }, 2000)
 })
+
+let newComment = [
+    "круто показує погоду!",
+    "баняк",
+    "глек",
+    "добавте ще щось на сайт",
+    "андрій каструля"
+];
+
+let commentNames = [
+    "akerman1337",
+    "katssuu",
+    "Lord Zelensky",
+    "spr1n1k",
+    "Sanchez123"
+];
+
+function pokazatiKomentari() {
+    let misceKomentariv = document.createElement('div');
+
+    for (let i = 0; i < newComment.length; i++) {
+        setTimeout(function () {
+            let randomName = commentNames[Math.floor(Math.random() * commentNames.length)];
+            let komentar = document.createElement('p');
+            newComment[i];
+            misceKomentariv.appendChild(komentar);
+        }, i * 20000);
+    }
+    let commentsBlock = document.querySelector('.second_part');
+    commentsBlock.appendChild(misceKomentariv);
+}
+pokazatiKomentari()
